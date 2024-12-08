@@ -16,6 +16,10 @@ alarm_status = {
     'hallway': 'off'
 }
 
+@app.route('/templates')
+def pagemain(name):
+  return render_template('index.html', name=name)
+
 @app.route('/status', methods=['GET'])
 def get_status():
     return jsonify({'doors': door_status, 'alarm': alarm_status})
