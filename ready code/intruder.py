@@ -2,14 +2,14 @@ import os
 import random
 
 # Базовый URL сервера
-BASE_URL = "http://127.0.0.1:6000"
+BASE_URL = "http://127.0.0.1:5000"
 
 # Генерация пароля
 def generate_password():
     return str(random.randint(100,999))
 
 # Проверка состояния двери
-#def check_door(door):
+def check_door(door):
     response = requests.get(f"{BASE_URL}/check_door/{door}")
     
     if response.status_code == 200:
