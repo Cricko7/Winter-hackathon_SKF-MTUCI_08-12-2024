@@ -6,15 +6,14 @@ app = Flask(__name__)
 
 # Хранение состояния
 door_status = {
-    'комната 1': 'closed',
-    'комната 2': 'open',
-    'коридор': 'closed'
+    'room1': 'closed',
+    'room2': 'open'
 }
 
 alarm_status = {
-    'комната 1': 'off',
-    'комната 2': 'on',
-    'коридор': 'off'
+    'room1': 'off',
+    'room2': 'on',
+    'hallway': 'off'
 }
 
 @app.route('/')
