@@ -1,5 +1,6 @@
 import os
 import random
+import requests
 
 # Базовый URL сервера
 BASE_URL = "http://127.0.0.1:5000"
