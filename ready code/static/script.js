@@ -6,7 +6,7 @@ async function fetchStatus() {
     document.getElementById('alarm-status').innerText = data.alarm.room1 === 'on' ? 
         'Сигнализация включена в комнате 1' : 
         (data.alarm.room2 === 'on' ? 
-            'Сигнализация включена в комнате 2' : 
+            'Сигнализация включена в коридоре' : 
             (data.alarm.hallway === 'on' ? 
                 'Сигнализация включена в коридоре' : 
                 'Сигнализация выключена'));
