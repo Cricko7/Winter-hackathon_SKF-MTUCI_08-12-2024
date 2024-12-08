@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Мониторинг безопасности</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./static/styles.css">
 </head>
 <body>
     <h1>Система мониторинга безопасности</h1>
@@ -14,12 +14,17 @@
     <h2>Статус сигнализации:</h2>
     <div id="alarm-status"></div>
 
+    <h3>Управление дверями</h3>
     <button onclick="updateDoor('room1', 'open')">Открыть дверь 1</button>
     <button onclick="updateDoor('room1', 'closed')">Закрыть дверь 1</button>
     
+    <button onclick="updateDoor('room2', 'open')">Открыть дверь 2</button>
+    <button onclick="updateDoor('room2', 'closed')">Закрыть дверь 2</button>
+
+    <h3>Управление сигнализацией</h3>
     <button onclick="updateAlarm('on')">Включить сигнализацию</button>
     <button onclick="updateAlarm('off')">Выключить сигнализацию</button>
 
-    <script src="script.js"></script>
+    <script src="./static/script.js"></script>
 </body>
 </html>
